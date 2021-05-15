@@ -3,25 +3,62 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18409FD81EA6DA547C3C696C /* Pods_DCA_Caculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDDBF9348054218CB985183 /* Pods_DCA_Caculator.framework */; };
 		DC022A0B264EA4F3002CA6EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC022A0A264EA4F3002CA6EE /* AppDelegate.swift */; };
 		DC022A0D264EA4F3002CA6EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC022A0C264EA4F3002CA6EE /* SceneDelegate.swift */; };
-		DC022A0F264EA4F3002CA6EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC022A0E264EA4F3002CA6EE /* ViewController.swift */; };
 		DC022A14264EA4F4002CA6EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC022A13264EA4F4002CA6EE /* Assets.xcassets */; };
 		DC022A17264EA4F4002CA6EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC022A15264EA4F4002CA6EE /* LaunchScreen.storyboard */; };
+		DC022A29264EA87F002CA6EE /* GILibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC022A27264EA87F002CA6EE /* GILibrary.xcframework */; };
+		DC022A2A264EA87F002CA6EE /* GILibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC022A27264EA87F002CA6EE /* GILibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC022A2B264EA87F002CA6EE /* MBProgressHUD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC022A28264EA87F002CA6EE /* MBProgressHUD.xcframework */; };
+		DC022A2C264EA87F002CA6EE /* MBProgressHUD.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC022A28264EA87F002CA6EE /* MBProgressHUD.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCED628C264EAA33003B058D /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED628B264EAA33003B058D /* SearchTableViewController.swift */; };
+		DCED628F264EADCB003B058D /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED628E264EADCB003B058D /* SearchCell.swift */; };
+		DCED6292264EC3B4003B058D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED6291264EC3B4003B058D /* APIService.swift */; };
+		DCED6295264EC61C003B058D /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED6294264EC61C003B058D /* SearchResults.swift */; };
+		DCFE38C0264F7FBD007185B5 /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE38BF264F7FBD007185B5 /* SearchPlaceholderView.swift */; };
+		DCFE38C3265003F2007185B5 /* UIAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE38C2265003F2007185B5 /* UIAnimatable.swift */; };
+		DCFE38C626500966007185B5 /* UIFont+constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE38C526500966007185B5 /* UIFont+constructor.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DC022A2D264EA87F002CA6EE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC022A2A264EA87F002CA6EE /* GILibrary.xcframework in Embed Frameworks */,
+				DC022A2C264EA87F002CA6EE /* MBProgressHUD.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9C25D2B327F5480E0CF48764 /* Pods-DCA-Caculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCA-Caculator.release.xcconfig"; path = "Target Support Files/Pods-DCA-Caculator/Pods-DCA-Caculator.release.xcconfig"; sourceTree = "<group>"; };
+		ACDDBF9348054218CB985183 /* Pods_DCA_Caculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCA_Caculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC022A07264EA4F3002CA6EE /* DCA-Caculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DCA-Caculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC022A0A264EA4F3002CA6EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC022A0C264EA4F3002CA6EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC022A0E264EA4F3002CA6EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC022A13264EA4F4002CA6EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC022A16264EA4F4002CA6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC022A18264EA4F4002CA6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC022A27264EA87F002CA6EE /* GILibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GILibrary.xcframework; path = Carthage/Build/GILibrary.xcframework; sourceTree = "<group>"; };
+		DC022A28264EA87F002CA6EE /* MBProgressHUD.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBProgressHUD.xcframework; path = Carthage/Build/MBProgressHUD.xcframework; sourceTree = "<group>"; };
+		DCED628B264EAA33003B058D /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		DCED628E264EADCB003B058D /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		DCED6291264EC3B4003B058D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DCED6294264EC61C003B058D /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		DCFE38BF264F7FBD007185B5 /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
+		DCFE38C2265003F2007185B5 /* UIAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimatable.swift; sourceTree = "<group>"; };
+		DCFE38C526500966007185B5 /* UIFont+constructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+constructor.swift"; sourceTree = "<group>"; };
+		DFCDD387AB12B260FD1361AE /* Pods-DCA-Caculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCA-Caculator.debug.xcconfig"; path = "Target Support Files/Pods-DCA-Caculator/Pods-DCA-Caculator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +66,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18409FD81EA6DA547C3C696C /* Pods_DCA_Caculator.framework in Frameworks */,
+				DC022A2B264EA87F002CA6EE /* MBProgressHUD.xcframework in Frameworks */,
+				DC022A29264EA87F002CA6EE /* GILibrary.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41CF44B16E8DE3F6F0B50294 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC022A27264EA87F002CA6EE /* GILibrary.xcframework */,
+				DC022A28264EA87F002CA6EE /* MBProgressHUD.xcframework */,
+				ACDDBF9348054218CB985183 /* Pods_DCA_Caculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63E2EDBC1A246E727554958E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFCDD387AB12B260FD1361AE /* Pods-DCA-Caculator.debug.xcconfig */,
+				9C25D2B327F5480E0CF48764 /* Pods-DCA-Caculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DC0229FE264EA4F3002CA6EE = {
 			isa = PBXGroup;
 			children = (
 				DC022A09264EA4F3002CA6EE /* DCA-Caculator */,
 				DC022A08264EA4F3002CA6EE /* Products */,
+				63E2EDBC1A246E727554958E /* Pods */,
+				41CF44B16E8DE3F6F0B50294 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +115,11 @@
 		DC022A09264EA4F3002CA6EE /* DCA-Caculator */ = {
 			isa = PBXGroup;
 			children = (
-				DC022A0E264EA4F3002CA6EE /* ViewController.swift */,
+				DCFE38C426500944007185B5 /* Extensions */,
+				DCFE38C1265003D8007185B5 /* Protocols */,
+				DCED6293264EC611003B058D /* Models */,
+				DCED6290264EC3A4003B058D /* Service */,
+				DCED628D264EADBC003B058D /* Search */,
 				DC022A1F264EA525002CA6EE /* Supporting files */,
 				DC022A18264EA4F4002CA6EE /* Info.plist */,
 			);
@@ -72,6 +137,48 @@
 			path = "Supporting files";
 			sourceTree = "<group>";
 		};
+		DCED628D264EADBC003B058D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DCED628B264EAA33003B058D /* SearchTableViewController.swift */,
+				DCED628E264EADCB003B058D /* SearchCell.swift */,
+				DCFE38BF264F7FBD007185B5 /* SearchPlaceholderView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		DCED6290264EC3A4003B058D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DCED6291264EC3B4003B058D /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DCED6293264EC611003B058D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCED6294264EC61C003B058D /* SearchResults.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCFE38C1265003D8007185B5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DCFE38C2265003F2007185B5 /* UIAnimatable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DCFE38C426500944007185B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCFE38C526500966007185B5 /* UIFont+constructor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC022A1B264EA4F4002CA6EE /* Build configuration list for PBXNativeTarget "DCA-Caculator" */;
 			buildPhases = (
+				97A891C490F1FAB605EBEBBC /* [CP] Check Pods Manifest.lock */,
 				DC022A03264EA4F3002CA6EE /* Sources */,
 				DC022A04264EA4F3002CA6EE /* Frameworks */,
 				DC022A05264EA4F3002CA6EE /* Resources */,
+				0754B2CE446CA68AB680F541 /* [CP] Embed Pods Frameworks */,
+				DC022A2D264EA87F002CA6EE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,14 +246,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0754B2CE446CA68AB680F541 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DCA-Caculator/Pods-DCA-Caculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DCA-Caculator/Pods-DCA-Caculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DCA-Caculator/Pods-DCA-Caculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97A891C490F1FAB605EBEBBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DCA-Caculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC022A03264EA4F3002CA6EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC022A0F264EA4F3002CA6EE /* ViewController.swift in Sources */,
 				DC022A0B264EA4F3002CA6EE /* AppDelegate.swift in Sources */,
+				DCFE38C3265003F2007185B5 /* UIAnimatable.swift in Sources */,
+				DCED6292264EC3B4003B058D /* APIService.swift in Sources */,
+				DCED628F264EADCB003B058D /* SearchCell.swift in Sources */,
+				DCFE38C626500966007185B5 /* UIFont+constructor.swift in Sources */,
+				DCED628C264EAA33003B058D /* SearchTableViewController.swift in Sources */,
+				DCED6295264EC61C003B058D /* SearchResults.swift in Sources */,
 				DC022A0D264EA4F3002CA6EE /* SceneDelegate.swift in Sources */,
+				DCFE38C0264F7FBD007185B5 /* SearchPlaceholderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +437,7 @@
 		};
 		DC022A1C264EA4F4002CA6EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFCDD387AB12B260FD1361AE /* Pods-DCA-Caculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,6 +457,7 @@
 		};
 		DC022A1D264EA4F4002CA6EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C25D2B327F5480E0CF48764 /* Pods-DCA-Caculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
