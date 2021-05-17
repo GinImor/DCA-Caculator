@@ -10,7 +10,6 @@ import Foundation
 
 struct SearchResults: Decodable {
   let items: [SearchResult]
-  
   enum CodingKeys: String, CodingKey {
     case items = "bestMatches"
   }
@@ -21,7 +20,6 @@ struct SearchResult: Decodable {
   let name: String
   let type: String
   let currency: String
-  
   enum CodingKeys: String, CodingKey {
     case symbol = "1. symbol"
     case name = "2. name"

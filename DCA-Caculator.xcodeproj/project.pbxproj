@@ -16,6 +16,12 @@
 		DC022A2A264EA87F002CA6EE /* GILibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC022A27264EA87F002CA6EE /* GILibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC022A2B264EA87F002CA6EE /* MBProgressHUD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC022A28264EA87F002CA6EE /* MBProgressHUD.xcframework */; };
 		DC022A2C264EA87F002CA6EE /* MBProgressHUD.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC022A28264EA87F002CA6EE /* MBProgressHUD.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC14F53B265212AC0089815F /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F53A265212AC0089815F /* Asset.swift */; };
+		DC14F53D265219560089815F /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F53C265219560089815F /* CalculatorController.swift */; };
+		DC14F53F26521FB10089815F /* String+addBrackets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F53E26521FB10089815F /* String+addBrackets.swift */; };
+		DC14F541265233450089815F /* UITextField+doneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F540265233450089815F /* UITextField+doneButton.swift */; };
+		DC1BC9FA2650AD0800088AEA /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1BC9F92650AD0800088AEA /* Calculator.storyboard */; };
+		DC1BC9FC26515A8800088AEA /* TimeSeriesMonthlyAdjusted.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BC9FB26515A8800088AEA /* TimeSeriesMonthlyAdjusted.swift */; };
 		DCED628C264EAA33003B058D /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED628B264EAA33003B058D /* SearchTableViewController.swift */; };
 		DCED628F264EADCB003B058D /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED628E264EADCB003B058D /* SearchCell.swift */; };
 		DCED6292264EC3B4003B058D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED6291264EC3B4003B058D /* APIService.swift */; };
@@ -51,6 +57,12 @@
 		DC022A18264EA4F4002CA6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC022A27264EA87F002CA6EE /* GILibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GILibrary.xcframework; path = Carthage/Build/GILibrary.xcframework; sourceTree = "<group>"; };
 		DC022A28264EA87F002CA6EE /* MBProgressHUD.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBProgressHUD.xcframework; path = Carthage/Build/MBProgressHUD.xcframework; sourceTree = "<group>"; };
+		DC14F53A265212AC0089815F /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		DC14F53C265219560089815F /* CalculatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
+		DC14F53E26521FB10089815F /* String+addBrackets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+addBrackets.swift"; sourceTree = "<group>"; };
+		DC14F540265233450089815F /* UITextField+doneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+doneButton.swift"; sourceTree = "<group>"; };
+		DC1BC9F92650AD0800088AEA /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
+		DC1BC9FB26515A8800088AEA /* TimeSeriesMonthlyAdjusted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesMonthlyAdjusted.swift; sourceTree = "<group>"; };
 		DCED628B264EAA33003B058D /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		DCED628E264EADCB003B058D /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		DCED6291264EC3B4003B058D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -115,6 +127,7 @@
 		DC022A09264EA4F3002CA6EE /* DCA-Caculator */ = {
 			isa = PBXGroup;
 			children = (
+				DC1BC9F426509E8900088AEA /* Calculator */,
 				DCFE38C426500944007185B5 /* Extensions */,
 				DCFE38C1265003D8007185B5 /* Protocols */,
 				DCED6293264EC611003B058D /* Models */,
@@ -135,6 +148,15 @@
 				DC022A15264EA4F4002CA6EE /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		DC1BC9F426509E8900088AEA /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				DC1BC9F92650AD0800088AEA /* Calculator.storyboard */,
+				DC14F53C265219560089815F /* CalculatorController.swift */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		DCED628D264EADBC003B058D /* Search */ = {
@@ -159,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				DCED6294264EC61C003B058D /* SearchResults.swift */,
+				DC1BC9FB26515A8800088AEA /* TimeSeriesMonthlyAdjusted.swift */,
+				DC14F53A265212AC0089815F /* Asset.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				DCFE38C526500966007185B5 /* UIFont+constructor.swift */,
+				DC14F53E26521FB10089815F /* String+addBrackets.swift */,
+				DC14F540265233450089815F /* UITextField+doneButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -240,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC022A17264EA4F4002CA6EE /* LaunchScreen.storyboard in Resources */,
+				DC1BC9FA2650AD0800088AEA /* Calculator.storyboard in Resources */,
 				DC022A14264EA4F4002CA6EE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,14 +321,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC022A0B264EA4F3002CA6EE /* AppDelegate.swift in Sources */,
+				DC14F541265233450089815F /* UITextField+doneButton.swift in Sources */,
 				DCFE38C3265003F2007185B5 /* UIAnimatable.swift in Sources */,
 				DCED6292264EC3B4003B058D /* APIService.swift in Sources */,
+				DC14F53B265212AC0089815F /* Asset.swift in Sources */,
 				DCED628F264EADCB003B058D /* SearchCell.swift in Sources */,
 				DCFE38C626500966007185B5 /* UIFont+constructor.swift in Sources */,
 				DCED628C264EAA33003B058D /* SearchTableViewController.swift in Sources */,
+				DC14F53D265219560089815F /* CalculatorController.swift in Sources */,
 				DCED6295264EC61C003B058D /* SearchResults.swift in Sources */,
 				DC022A0D264EA4F3002CA6EE /* SceneDelegate.swift in Sources */,
+				DC14F53F26521FB10089815F /* String+addBrackets.swift in Sources */,
 				DCFE38C0264F7FBD007185B5 /* SearchPlaceholderView.swift in Sources */,
+				DC1BC9FC26515A8800088AEA /* TimeSeriesMonthlyAdjusted.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

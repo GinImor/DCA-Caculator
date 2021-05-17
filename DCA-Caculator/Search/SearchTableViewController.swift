@@ -60,7 +60,7 @@ class SearchTableViewController: GIListController<SearchResult>, UIAnimatable {
   
   func performSearch(searchQuery: String) {
     showLoadingAnimation()
-    apiService.fetchSymbolsPublisher(searchTerm: searchQuery).sink { [unowned self] (completion) in
+    apiService.fetchSymbolsPublisher(query: searchQuery).sink { [unowned self] (completion) in
       self.hideLoadingAnimation()
       switch completion {
       case .failure(let error):
@@ -76,6 +76,25 @@ class SearchTableViewController: GIListController<SearchResult>, UIAnimatable {
     navigationItem.searchController = searchController
     navigationItem.title = "Search"
     navigationController?.navigationBar.prefersLargeTitles = true
+  }
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+    let selectedItem = list[indexPath.row]
+    showLoadingAnimation()
+    apiService.fetchTimeSeriesMonthlyAdjustedPublisher(query: selectedItem.symbol).sink { [weak self] (completion) in
+      self?.hideLoadingAnimation()
+      switch completion {
+      case .failure(let error):
+        print(error)
+      case .finished: ()
+      }
+    } receiveValue: { [weak self] (adjusted) in
+      let calculatorController = UIStoryboard(name: "Calculator", bundle: nil).instantiateViewController(withIdentifier: "Calculator") as! CalculatorController
+      calculatorController.navigationItem.largeTitleDisplayMode = .never
+      calculatorController.asset = Asset(searchResult: selectedItem, timeSeriesMonthlyAdjusted: adjusted)
+      self?.navigationController?.pushViewController(calculatorController, animated: true)
+    }.store(in: &subscribers)
   }
   
 }
