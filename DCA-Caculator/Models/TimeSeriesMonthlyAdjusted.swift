@@ -51,21 +51,3 @@ struct Meta: Decodable {
     case symbol = "2. Symbol"
   }
 }
-
-//{
-//"Meta Data": {
-//"1. Information": "Monthly Adjusted Prices and Volumes",
-//"2. Symbol": "IBM",
-//"3. Last Refreshed": "2021-05-14",
-//"4. Time Zone": "US/Eastern"
-//},
-//"Monthly Adjusted Time Series": {
-//"2021-05-14": {
-//"1. open": "143.8100",
-//"2. high": "148.5150",
-//"3. low": "141.1400",
-//"4. close": "144.6800",
-//"5. adjusted close": "144.6800",
-//"6. volume": "57629361",
-//"7. dividend amount": "1.6400"
-//},

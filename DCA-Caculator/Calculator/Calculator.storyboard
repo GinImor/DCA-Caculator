@@ -62,12 +62,21 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="5000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoB-3n-F20">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkR-F3-sNh">
                                                             <rect key="frame" x="0.0" y="44" width="382" height="20"/>
-                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
-                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="5000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoB-3n-F20">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="59" height="20"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcl-Lh-dtr">
+                                                                    <rect key="frame" x="59" y="0.0" width="323" height="20"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0sd-La-QVY">
                                                             <rect key="frame" x="0.0" y="68" width="382" height="14"/>
                                                             <subviews>
@@ -172,6 +181,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="36" id="xST-Is-MUi"/>
                                                                     </constraints>
+                                                                    <color key="textColor" systemColor="systemBlueColor"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                 </textField>
@@ -205,6 +215,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="36" id="N28-ZQ-Ase"/>
                                                                     </constraints>
+                                                                    <color key="textColor" systemColor="systemBlueColor"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                 </textField>
@@ -238,6 +249,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="36" id="s4h-fe-lIS"/>
                                                                     </constraints>
+                                                                    <color key="textColor" systemColor="systemBlueColor"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                                     <textInputTraits key="textInputTraits"/>
                                                                 </textField>
@@ -257,6 +269,9 @@
                                                                 </stackView>
                                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FMR-C5-oN5">
                                                                     <rect key="frame" x="-2" y="42" width="386" height="35"/>
+                                                                    <connections>
+                                                                        <action selector="dateSliderValueDidChange:" destination="PSC-F4-iky" eventType="valueChanged" id="Tac-3E-6hw"/>
+                                                                    </connections>
                                                                 </slider>
                                                             </subviews>
                                                         </stackView>
@@ -280,12 +295,18 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="initialDateOfInvestment" destination="K3G-Vi-27q" id="B8w-Sh-kjb"/>
+                        <outlet property="annualReturnLabel" destination="Yix-J0-R0q" id="Ps9-kY-s0B"/>
+                        <outlet property="currentValueLabel" destination="JoB-3n-F20" id="zTx-ba-8Lt"/>
+                        <outlet property="dateSlider" destination="FMR-C5-oN5" id="hbg-8n-vaM"/>
+                        <outlet property="gainLabel" destination="eNM-uc-QeD" id="zIk-qs-LTA"/>
+                        <outlet property="initialDateOfInvestmentTextField" destination="K3G-Vi-27q" id="B8w-Sh-kjb"/>
                         <outlet property="initialInvestmentTextField" destination="1xu-AE-Kid" id="JFQ-wY-heO"/>
                         <outlet property="investmentAmountCurrentLabel" destination="lfV-5l-KIk" id="BY4-hQ-po5"/>
+                        <outlet property="investmentAmountLabel" destination="jJa-I7-Wp4" id="pNw-De-xkL"/>
                         <outlet property="monthlyDollarCostAveragingTextField" destination="aHf-NN-6ON" id="W6c-FB-1Mb"/>
                         <outlet property="nameLabel" destination="ICU-Fx-TYE" id="B3n-TT-ePz"/>
                         <outlet property="symbolLabel" destination="cVR-IQ-AD0" id="Zdf-TL-UU5"/>
+                        <outlet property="yieldLabel" destination="Ogk-Ip-YRB" id="8Bu-oY-D2v"/>
                         <outletCollection property="currencyLabels" destination="rz3-13-MfI" collectionClass="NSMutableArray" id="teF-j4-NlX"/>
                         <outletCollection property="currencyLabels" destination="B8R-N9-Gm6" collectionClass="NSMutableArray" id="Hu3-NT-ZVO"/>
                         <outletCollection property="currencyLabels" destination="P7V-CO-WEZ" collectionClass="NSMutableArray" id="AZC-PO-fmc"/>
@@ -299,6 +320,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

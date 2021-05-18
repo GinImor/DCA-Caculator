@@ -94,6 +94,7 @@ class SearchTableViewController: GIListController<SearchResult>, UIAnimatable {
       calculatorController.navigationItem.largeTitleDisplayMode = .never
       calculatorController.asset = Asset(searchResult: selectedItem, timeSeriesMonthlyAdjusted: adjusted)
       self?.navigationController?.pushViewController(calculatorController, animated: true)
+      self?.searchController.searchBar.text = nil
     }.store(in: &subscribers)
   }
   
