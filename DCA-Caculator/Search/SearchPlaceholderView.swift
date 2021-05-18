@@ -14,7 +14,7 @@ class SearchPlaceholderView: UIView {
   let imageView = UIImageView.new(imageName: "imLaunch", contentMode: .scaleAspectFit)
   let titleLabel: UILabel = {
     let label = UILabel()
-    label.text = "Search for companies to calculate potential returns via dollar cose averaging."
+    label.text = "Search for companies to calculate potential returns via dollar cose averaging"
     label.font = UIFont.primaryFont(style: .medium, size: 14)
     label.numberOfLines = 0
     label.textAlignment = .center

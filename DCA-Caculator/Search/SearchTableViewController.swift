@@ -58,6 +58,11 @@ class SearchTableViewController: GIListController<SearchResult>, UIAnimatable {
     }.store(in: &subscribers)
   }
   
+  override func setupTableView() {
+    super.setupTableView()
+    tableView.isScrollEnabled = false
+  }
+  
   func performSearch(searchQuery: String) {
     showLoadingAnimation()
     apiService.fetchSymbolsPublisher(query: searchQuery).sink { [unowned self] (completion) in
@@ -69,6 +74,7 @@ class SearchTableViewController: GIListController<SearchResult>, UIAnimatable {
       }
     } receiveValue: { [unowned self] (searchResults) in
       self.setList(searchResults.items)
+      self.tableView.isScrollEnabled = true
     }.store(in: &subscribers)
   }
 
