@@ -77,7 +77,7 @@ class CalculatorController: UITableViewController {
         strongSelf.annualReturnLabel.textColor = valueColor
         strongSelf.currentValueLabel.text = result.currentValue.currencyString
         strongSelf.investmentAmountLabel.text = result.investmentAmount.toCurrency(hasFractionDigits: false)
-        strongSelf.gainLabel.text = result.gain.toCurrency(hasCurrencySymbol: false, hasFractionDigits: false)
+        strongSelf.gainLabel.text = result.gain.toCurrency(hasFractionDigits: false)
         strongSelf.yieldLabel.text = result.yield.percentage.addBrackets()
         strongSelf.annualReturnLabel.text = result.annualReturn.percentage
       }

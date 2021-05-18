@@ -29,7 +29,7 @@ extension Double {
     if !hasFractionDigits {
       formatter.maximumFractionDigits = 0
     }
-    formatter.positivePrefix = "+"
+    formatter.positivePrefix = "+" + formatter.positivePrefix
     return formatter.string(from: self as NSNumber) ?? String(format: "%+.2f", self)
   }
   
