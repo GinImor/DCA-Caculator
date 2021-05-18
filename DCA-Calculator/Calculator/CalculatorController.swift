@@ -48,6 +48,11 @@ class CalculatorController: UITableViewController {
     resetViews()
   }
   
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    initialInvestmentTextField.becomeFirstResponder()
+  }
+  
   private func observeForm() {
     // there are two way to change the index, dateSlider and dateSelectionController
     // when the index change, need to update ivestment textField and slider
@@ -102,7 +107,6 @@ class CalculatorController: UITableViewController {
   }
   
   private func setupTextFields() {
-    initialInvestmentTextField.becomeFirstResponder()
     initialInvestmentTextField.addDoneButton()
     monthlyDollarCostAveragingTextField.addDoneButton()
     initialDateOfInvestmentTextField.delegate = self

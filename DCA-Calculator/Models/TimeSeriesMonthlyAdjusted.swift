@@ -23,16 +23,24 @@ struct TimeSeriesMonthlyAdjusted: Decodable {
   }
   
   func getMonthInfos() -> [MonthInfo] {
-    return timeSeries.sorted { $0.key > $1.key }.map { key, OHLC in
+    
+    enum PasingError: Error { case badData }
+    
+    let monthInfos: [MonthInfo]? = try? timeSeries.sorted { $0.key > $1.key }.map { key, OHLC in
       let dateFormatter = DateFormatter()
       dateFormatter.dateFormat = "yyyy-MM-dd"
-      let date = dateFormatter.date(from: key)!
-      return MonthInfo(date: date, adjustedOpen: getAdjustedOpen(OHLC), adjustedClose: Double(OHLC.adjustedClose)!)
+      guard let date = dateFormatter.date(from: key),
+            let adjustedOpen = getAdjustedOpen(OHLC),
+            let adjustedClose = Double(OHLC.adjustedClose) else { throw PasingError.badData }
+      return MonthInfo(date: date, adjustedOpen: adjustedOpen, adjustedClose: adjustedClose)
     }
+    return monthInfos ?? []
   }
   
-  private func getAdjustedOpen(_ OHLC: OHLC) -> Double {
-    Double(OHLC.open)! * (Double(OHLC.adjustedClose)! / Double(OHLC.close)!)
+  private func getAdjustedOpen(_ OHLC: OHLC) -> Double? {
+    guard let open = Double(OHLC.open), let adjustedClose = Double(OHLC.adjustedClose),
+          let close = Double(OHLC.close) else { return nil }
+    return open * (adjustedClose / close)
   }
 }
 
