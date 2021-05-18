@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70CE90539F398EB7F6916A49 /* Pods_DCA_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340DB7196CA51F6C0B741BBE /* Pods_DCA_Calculator.framework */; };
+		DC022A29264EA87F002CA6EE /* GILibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC022A27264EA87F002CA6EE /* GILibrary.xcframework */; };
+		DC022A2A264EA87F002CA6EE /* GILibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC022A27264EA87F002CA6EE /* GILibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC022A2B264EA87F002CA6EE /* MBProgressHUD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC022A28264EA87F002CA6EE /* MBProgressHUD.xcframework */; };
+		DC022A2C264EA87F002CA6EE /* MBProgressHUD.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC022A28264EA87F002CA6EE /* MBProgressHUD.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCC065DB2653830300AE145C /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC065BA2653830300AE145C /* Calculator.storyboard */; };
+		DCC065DC2653830300AE145C /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065BB2653830300AE145C /* CalculatorController.swift */; };
+		DCC065DD2653830300AE145C /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065BD2653830300AE145C /* SearchResults.swift */; };
+		DCC065DE2653830300AE145C /* TimeSeriesMonthlyAdjusted.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065BE2653830300AE145C /* TimeSeriesMonthlyAdjusted.swift */; };
+		DCC065DF2653830300AE145C /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065BF2653830300AE145C /* Asset.swift */; };
+		DCC065E02653830300AE145C /* Double+stringConvertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065C12653830300AE145C /* Double+stringConvertion.swift */; };
+		DCC065E12653830300AE145C /* UIFont+constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065C22653830300AE145C /* UIFont+constructor.swift */; };
+		DCC065E22653830300AE145C /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065C32653830300AE145C /* UIColor+hex.swift */; };
+		DCC065E32653830300AE145C /* Int+float.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065C42653830300AE145C /* Int+float.swift */; };
+		DCC065E42653830300AE145C /* String+addBrackets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065C52653830300AE145C /* String+addBrackets.swift */; };
+		DCC065E52653830300AE145C /* UITextField+doneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065C62653830300AE145C /* UITextField+doneButton.swift */; };
+		DCC065E62653830300AE145C /* Date+stringConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065C72653830300AE145C /* Date+stringConversion.swift */; };
+		DCC065E72653830300AE145C /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065C92653830300AE145C /* SearchCell.swift */; };
+		DCC065E82653830300AE145C /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065CA2653830300AE145C /* SearchPlaceholderView.swift */; };
+		DCC065E92653830300AE145C /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065CB2653830300AE145C /* SearchTableViewController.swift */; };
+		DCC065EA2653830300AE145C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC065CD2653830300AE145C /* Assets.xcassets */; };
+		DCC065EB2653830300AE145C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC065CE2653830300AE145C /* LaunchScreen.storyboard */; };
+		DCC065EC2653830300AE145C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065D02653830300AE145C /* AppDelegate.swift */; };
+		DCC065ED2653830300AE145C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065D12653830300AE145C /* SceneDelegate.swift */; };
+		DCC065EE2653830300AE145C /* DateSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065D32653830300AE145C /* DateSelectionCell.swift */; };
+		DCC065EF2653830300AE145C /* DateSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065D42653830300AE145C /* DateSelectionController.swift */; };
+		DCC065F02653830300AE145C /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065D62653830300AE145C /* APIService.swift */; };
+		DCC065F12653830300AE145C /* DCAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065D72653830300AE145C /* DCAService.swift */; };
+		DCC065F22653830300AE145C /* UIAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC065D92653830300AE145C /* UIAnimatable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC022A2D264EA87F002CA6EE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC022A2A264EA87F002CA6EE /* GILibrary.xcframework in Embed Frameworks */,
+				DC022A2C264EA87F002CA6EE /* MBProgressHUD.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		24124EF5A6E28B3D70C06640 /* Pods-DCA-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCA-Calculator.release.xcconfig"; path = "Target Support Files/Pods-DCA-Calculator/Pods-DCA-Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		340DB7196CA51F6C0B741BBE /* Pods_DCA_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCA_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DC0B4DD7910C9588420DDB /* Pods-DCA-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCA-Calculator.debug.xcconfig"; path = "Target Support Files/Pods-DCA-Calculator/Pods-DCA-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		DC022A07264EA4F3002CA6EE /* DCA-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DCA-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC022A27264EA87F002CA6EE /* GILibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GILibrary.xcframework; path = Carthage/Build/GILibrary.xcframework; sourceTree = "<group>"; };
+		DC022A28264EA87F002CA6EE /* MBProgressHUD.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBProgressHUD.xcframework; path = Carthage/Build/MBProgressHUD.xcframework; sourceTree = "<group>"; };
+		DCC065BA2653830300AE145C /* Calculator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
+		DCC065BB2653830300AE145C /* CalculatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
+		DCC065BD2653830300AE145C /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		DCC065BE2653830300AE145C /* TimeSeriesMonthlyAdjusted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSeriesMonthlyAdjusted.swift; sourceTree = "<group>"; };
+		DCC065BF2653830300AE145C /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		DCC065C12653830300AE145C /* Double+stringConvertion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+stringConvertion.swift"; sourceTree = "<group>"; };
+		DCC065C22653830300AE145C /* UIFont+constructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+constructor.swift"; sourceTree = "<group>"; };
+		DCC065C32653830300AE145C /* UIColor+hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		DCC065C42653830300AE145C /* Int+float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+float.swift"; sourceTree = "<group>"; };
+		DCC065C52653830300AE145C /* String+addBrackets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+addBrackets.swift"; sourceTree = "<group>"; };
+		DCC065C62653830300AE145C /* UITextField+doneButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+doneButton.swift"; sourceTree = "<group>"; };
+		DCC065C72653830300AE145C /* Date+stringConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+stringConversion.swift"; sourceTree = "<group>"; };
+		DCC065C92653830300AE145C /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		DCC065CA2653830300AE145C /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
+		DCC065CB2653830300AE145C /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		DCC065CD2653830300AE145C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCC065CF2653830300AE145C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCC065D02653830300AE145C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCC065D12653830300AE145C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DCC065D32653830300AE145C /* DateSelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSelectionCell.swift; sourceTree = "<group>"; };
+		DCC065D42653830300AE145C /* DateSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSelectionController.swift; sourceTree = "<group>"; };
+		DCC065D62653830300AE145C /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DCC065D72653830300AE145C /* DCAService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCAService.swift; sourceTree = "<group>"; };
+		DCC065D92653830300AE145C /* UIAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAnimatable.swift; sourceTree = "<group>"; };
+		DCC065DA2653830300AE145C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC022A04264EA4F3002CA6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC022A2B264EA87F002CA6EE /* MBProgressHUD.xcframework in Frameworks */,
+				DC022A29264EA87F002CA6EE /* GILibrary.xcframework in Frameworks */,
+				70CE90539F398EB7F6916A49 /* Pods_DCA_Calculator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41CF44B16E8DE3F6F0B50294 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC022A27264EA87F002CA6EE /* GILibrary.xcframework */,
+				DC022A28264EA87F002CA6EE /* MBProgressHUD.xcframework */,
+				340DB7196CA51F6C0B741BBE /* Pods_DCA_Calculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63E2EDBC1A246E727554958E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65DC0B4DD7910C9588420DDB /* Pods-DCA-Calculator.debug.xcconfig */,
+				24124EF5A6E28B3D70C06640 /* Pods-DCA-Calculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC0229FE264EA4F3002CA6EE = {
+			isa = PBXGroup;
+			children = (
+				DCC065B82653830300AE145C /* DCA-Calculator */,
+				DC022A08264EA4F3002CA6EE /* Products */,
+				63E2EDBC1A246E727554958E /* Pods */,
+				41CF44B16E8DE3F6F0B50294 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC022A08264EA4F3002CA6EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC022A07264EA4F3002CA6EE /* DCA-Calculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCC065B82653830300AE145C /* DCA-Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				DCC065B92653830300AE145C /* Calculator */,
+				DCC065BC2653830300AE145C /* Models */,
+				DCC065C02653830300AE145C /* Extensions */,
+				DCC065C82653830300AE145C /* Search */,
+				DCC065CC2653830300AE145C /* Supporting files */,
+				DCC065D22653830300AE145C /* Date Selection */,
+				DCC065D52653830300AE145C /* Service */,
+				DCC065D82653830300AE145C /* Protocols */,
+				DCC065DA2653830300AE145C /* Info.plist */,
+			);
+			path = "DCA-Calculator";
+			sourceTree = "<group>";
+		};
+		DCC065B92653830300AE145C /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				DCC065BA2653830300AE145C /* Calculator.storyboard */,
+				DCC065BB2653830300AE145C /* CalculatorController.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		DCC065BC2653830300AE145C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCC065BD2653830300AE145C /* SearchResults.swift */,
+				DCC065BE2653830300AE145C /* TimeSeriesMonthlyAdjusted.swift */,
+				DCC065BF2653830300AE145C /* Asset.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCC065C02653830300AE145C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCC065C12653830300AE145C /* Double+stringConvertion.swift */,
+				DCC065C22653830300AE145C /* UIFont+constructor.swift */,
+				DCC065C32653830300AE145C /* UIColor+hex.swift */,
+				DCC065C42653830300AE145C /* Int+float.swift */,
+				DCC065C52653830300AE145C /* String+addBrackets.swift */,
+				DCC065C62653830300AE145C /* UITextField+doneButton.swift */,
+				DCC065C72653830300AE145C /* Date+stringConversion.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DCC065C82653830300AE145C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DCC065C92653830300AE145C /* SearchCell.swift */,
+				DCC065CA2653830300AE145C /* SearchPlaceholderView.swift */,
+				DCC065CB2653830300AE145C /* SearchTableViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		DCC065CC2653830300AE145C /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				DCC065CD2653830300AE145C /* Assets.xcassets */,
+				DCC065CE2653830300AE145C /* LaunchScreen.storyboard */,
+				DCC065D02653830300AE145C /* AppDelegate.swift */,
+				DCC065D12653830300AE145C /* SceneDelegate.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		DCC065D22653830300AE145C /* Date Selection */ = {
+			isa = PBXGroup;
+			children = (
+				DCC065D32653830300AE145C /* DateSelectionCell.swift */,
+				DCC065D42653830300AE145C /* DateSelectionController.swift */,
+			);
+			path = "Date Selection";
+			sourceTree = "<group>";
+		};
+		DCC065D52653830300AE145C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DCC065D62653830300AE145C /* APIService.swift */,
+				DCC065D72653830300AE145C /* DCAService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DCC065D82653830300AE145C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DCC065D92653830300AE145C /* UIAnimatable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC022A06264EA4F3002CA6EE /* DCA-Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC022A1B264EA4F4002CA6EE /* Build configuration list for PBXNativeTarget "DCA-Calculator" */;
+			buildPhases = (
+				A69143134642CF0BBB0E672B /* [CP] Check Pods Manifest.lock */,
+				DC022A03264EA4F3002CA6EE /* Sources */,
+				DC022A04264EA4F3002CA6EE /* Frameworks */,
+				DC022A05264EA4F3002CA6EE /* Resources */,
+				DC022A2D264EA87F002CA6EE /* Embed Frameworks */,
+				86CA7C66B92690D196B8CAD2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DCA-Calculator";
+			productName = "DCA-Caculator";
+			productReference = DC022A07264EA4F3002CA6EE /* DCA-Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC0229FF264EA4F3002CA6EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					DC022A06264EA4F3002CA6EE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = DC022A02264EA4F3002CA6EE /* Build configuration list for PBXProject "DCA-Calculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC0229FE264EA4F3002CA6EE;
+			productRefGroup = DC022A08264EA4F3002CA6EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC022A06264EA4F3002CA6EE /* DCA-Calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC022A05264EA4F3002CA6EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC065EB2653830300AE145C /* LaunchScreen.storyboard in Resources */,
+				DCC065EA2653830300AE145C /* Assets.xcassets in Resources */,
+				DCC065DB2653830300AE145C /* Calculator.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86CA7C66B92690D196B8CAD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DCA-Calculator/Pods-DCA-Calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DCA-Calculator/Pods-DCA-Calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DCA-Calculator/Pods-DCA-Calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A69143134642CF0BBB0E672B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DCA-Calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC022A03264EA4F3002CA6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC065F22653830300AE145C /* UIAnimatable.swift in Sources */,
+				DCC065E22653830300AE145C /* UIColor+hex.swift in Sources */,
+				DCC065F02653830300AE145C /* APIService.swift in Sources */,
+				DCC065E72653830300AE145C /* SearchCell.swift in Sources */,
+				DCC065DD2653830300AE145C /* SearchResults.swift in Sources */,
+				DCC065EC2653830300AE145C /* AppDelegate.swift in Sources */,
+				DCC065EE2653830300AE145C /* DateSelectionCell.swift in Sources */,
+				DCC065E92653830300AE145C /* SearchTableViewController.swift in Sources */,
+				DCC065E82653830300AE145C /* SearchPlaceholderView.swift in Sources */,
+				DCC065E12653830300AE145C /* UIFont+constructor.swift in Sources */,
+				DCC065ED2653830300AE145C /* SceneDelegate.swift in Sources */,
+				DCC065E02653830300AE145C /* Double+stringConvertion.swift in Sources */,
+				DCC065E62653830300AE145C /* Date+stringConversion.swift in Sources */,
+				DCC065E42653830300AE145C /* String+addBrackets.swift in Sources */,
+				DCC065EF2653830300AE145C /* DateSelectionController.swift in Sources */,
+				DCC065DC2653830300AE145C /* CalculatorController.swift in Sources */,
+				DCC065DF2653830300AE145C /* Asset.swift in Sources */,
+				DCC065F12653830300AE145C /* DCAService.swift in Sources */,
+				DCC065E52653830300AE145C /* UITextField+doneButton.swift in Sources */,
+				DCC065E32653830300AE145C /* Int+float.swift in Sources */,
+				DCC065DE2653830300AE145C /* TimeSeriesMonthlyAdjusted.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCC065CE2653830300AE145C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC065CF2653830300AE145C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC022A19264EA4F4002CA6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC022A1A264EA4F4002CA6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC022A1C264EA4F4002CA6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65DC0B4DD7910C9588420DDB /* Pods-DCA-Calculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRF7U674EN;
+				INFOPLIST_FILE = "$(SRCROOT)/DCA-Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "China.FoeverKid.FreeLove.DCA-Caculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC022A1D264EA4F4002CA6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24124EF5A6E28B3D70C06640 /* Pods-DCA-Calculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRF7U674EN;
+				INFOPLIST_FILE = "$(SRCROOT)/DCA-Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "China.FoeverKid.FreeLove.DCA-Caculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC022A02264EA4F3002CA6EE /* Build configuration list for PBXProject "DCA-Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC022A19264EA4F4002CA6EE /* Debug */,
+				DC022A1A264EA4F4002CA6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC022A1B264EA4F4002CA6EE /* Build configuration list for PBXNativeTarget "DCA-Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC022A1C264EA4F4002CA6EE /* Debug */,
+				DC022A1D264EA4F4002CA6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC0229FF264EA4F3002CA6EE /* Project object */;
+}

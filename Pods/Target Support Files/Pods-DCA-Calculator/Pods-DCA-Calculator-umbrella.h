@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_DCA_CaculatorVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_DCA_CaculatorVersionString[];
+FOUNDATION_EXPORT double Pods_DCA_CalculatorVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_DCA_CalculatorVersionString[];
 
