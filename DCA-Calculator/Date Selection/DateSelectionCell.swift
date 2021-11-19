@@ -17,7 +17,7 @@ class DateSelectionCell: GIListCell<MonthInfo> {
   
   override func setup() {
     super.setup()
-    GIVStack(monthLabel, monthsAgoLabel)
+    vStack(monthLabel, monthsAgoLabel)
       .add(to: self).filling(self, edgeInsets: .init(8, 16))
   }
   

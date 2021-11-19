@@ -13,7 +13,8 @@ open class GISnappingGridController<Item>: GIGridController<Item> {
   public init(scrollDirection: UICollectionView.ScrollDirection = .horizontal) {
     let layout = GISnappingLayout()
     layout.scrollDirection = scrollDirection
-    super.init(flowLayout: UICollectionViewFlowLayout())
+    super.init(flowLayout: layout)
+    collectionView.decelerationRate = .fast
   }
   
   required public init?(coder: NSCoder) {

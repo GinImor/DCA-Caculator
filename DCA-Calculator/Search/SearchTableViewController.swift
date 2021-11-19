@@ -28,17 +28,17 @@ class SearchTableViewController: GIListController<SearchResult>, UIAnimatable {
     return sc
   }()
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    setupNavigationBar()
-    observeForm()
-  }
-  
   let apiService = APIService()
   private var subscribers: Set<AnyCancellable> = []
   
   @Published var searchQuery: String = ""
   @Published var mode: Mode = .onBoarding
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    setupNavigationBar()
+    observeForm()
+  }
   
   func observeForm() {
     $searchQuery

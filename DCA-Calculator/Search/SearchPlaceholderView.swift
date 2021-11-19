@@ -31,7 +31,7 @@ class SearchPlaceholderView: UIView {
   }
   
   private func setup() {
-    GIVStack(imageView.sizing(height: 88), titleLabel)
-      .spacing(24).add(to: self).centering(self).sizing(.width, to: self, multiplier: 0.8)
+    vStack(imageView.sizing(height: 88), titleLabel).spacing(24)
+      .add(to: self).centering(self).sizing(.width, to: self, multiplier: 0.8)
   }
 }

@@ -22,15 +22,3 @@ extension UIFont {
     UIFont(name: "AvenirNext-\(style.rawValue.capitalized)", size: size)!
   }
 }
-
-//AvenirNext-Italic
-//AvenirNext-UltraLight
-//AvenirNext-UltraLightItalic
-//AvenirNext-Medium
-//AvenirNext-MediumItalic
-//AvenirNext-DemiBold
-//AvenirNext-DemiBoldItalic
-//AvenirNext-Bold
-//AvenirNext-BoldItalic
-//AvenirNext-Heavy
-//AvenirNext-HeavyItalic

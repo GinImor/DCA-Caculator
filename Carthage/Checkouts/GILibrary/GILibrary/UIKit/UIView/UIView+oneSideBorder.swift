@@ -12,7 +12,6 @@ public extension UIView {
   
   func addBottomBorder(leftPad: CGFloat) {
     let borderView = newBorderView()
-    borderView.disableTAMIC()
     NSLayoutConstraint.activate([
       borderView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: leftPad),
       borderView.trailingAnchor.constraint(equalTo: trailingAnchor),
@@ -23,7 +22,6 @@ public extension UIView {
   
   func addBottomBorder(leadingAnchor: NSLayoutXAxisAnchor) {
     let borderView = newBorderView()
-    borderView.disableTAMIC()
     NSLayoutConstraint.activate([
       borderView.leadingAnchor.constraint(equalTo: leadingAnchor),
       borderView.trailingAnchor.constraint(equalTo: trailingAnchor),

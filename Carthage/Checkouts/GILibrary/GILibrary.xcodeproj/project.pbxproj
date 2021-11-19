@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC8EE0F0265401F7002DFDAD /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EE0EF265401F7002DFDAD /* UIColor+hex.swift */; };
 		DCB87C94264B945D00CF250A /* GIListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB87C93264B945D00CF250A /* GIListController.swift */; };
 		DCE03F63264B7BBC00161C8C /* GIGridSelfSizingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE03F62264B7BBC00161C8C /* GIGridSelfSizingCell.swift */; };
 		DCEAF27A264B702300AA7E88 /* GILibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = DCEAF278264B702300AA7E88 /* GILibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -15,7 +16,7 @@
 		DCEAF295264B70DB00AA7E88 /* IndentedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEAF283264B70DA00AA7E88 /* IndentedTextField.swift */; };
 		DCEAF296264B70DB00AA7E88 /* UITextField+constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEAF284264B70DA00AA7E88 /* UITextField+constructor.swift */; };
 		DCEAF297264B70DB00AA7E88 /* UIView+layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEAF285264B70DA00AA7E88 /* UIView+layout.swift */; };
-		DCEAF298264B70DB00AA7E88 /* GIStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEAF286264B70DA00AA7E88 /* GIStack.swift */; };
+		DCEAF298264B70DB00AA7E88 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEAF286264B70DA00AA7E88 /* Stack.swift */; };
 		DCEAF299264B70DB00AA7E88 /* UIViewController+navInTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEAF287264B70DA00AA7E88 /* UIViewController+navInTabBar.swift */; };
 		DCEAF29A264B70DB00AA7E88 /* CGRect+convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEAF288264B70DA00AA7E88 /* CGRect+convenience.swift */; };
 		DCEAF29B264B70DB00AA7E88 /* UIView+layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEAF289264B70DA00AA7E88 /* UIView+layer.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC8EE0EF265401F7002DFDAD /* UIColor+hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 		DCB87C93264B945D00CF250A /* GIListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIListController.swift; sourceTree = "<group>"; };
 		DCE03F62264B7BBC00161C8C /* GIGridSelfSizingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIGridSelfSizingCell.swift; sourceTree = "<group>"; };
 		DCEAF275264B702300AA7E88 /* GILibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GILibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,7 +45,7 @@
 		DCEAF283264B70DA00AA7E88 /* IndentedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndentedTextField.swift; sourceTree = "<group>"; };
 		DCEAF284264B70DA00AA7E88 /* UITextField+constructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+constructor.swift"; sourceTree = "<group>"; };
 		DCEAF285264B70DA00AA7E88 /* UIView+layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+layout.swift"; sourceTree = "<group>"; };
-		DCEAF286264B70DA00AA7E88 /* GIStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIStack.swift; sourceTree = "<group>"; };
+		DCEAF286264B70DA00AA7E88 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		DCEAF287264B70DA00AA7E88 /* UIViewController+navInTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+navInTabBar.swift"; sourceTree = "<group>"; };
 		DCEAF288264B70DA00AA7E88 /* CGRect+convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+convenience.swift"; sourceTree = "<group>"; };
 		DCEAF289264B70DA00AA7E88 /* UIView+layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+layer.swift"; sourceTree = "<group>"; };
@@ -136,7 +138,7 @@
 		DCE03F70264B7C9400161C8C /* Stack */ = {
 			isa = PBXGroup;
 			children = (
-				DCEAF286264B70DA00AA7E88 /* GIStack.swift */,
+				DCEAF286264B70DA00AA7E88 /* Stack.swift */,
 				DCEAF28B264B70DA00AA7E88 /* UIStackView+padding.swift */,
 			);
 			path = Stack;
@@ -170,6 +172,7 @@
 		DCE03F7C264B7E0A00161C8C /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DC8EE0EF265401F7002DFDAD /* UIColor+hex.swift */,
 				DCEAF28E264B70DB00AA7E88 /* UIColor+constructor.swift */,
 				DCEAF291264B70DB00AA7E88 /* UIEdgeInsets+constructor.swift */,
 			);
@@ -268,6 +271,7 @@
 		DCEAF26C264B702300AA7E88 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					DCEAF274264B702300AA7E88 = {
@@ -316,6 +320,7 @@
 				DCEAF29B264B70DB00AA7E88 /* UIView+layer.swift in Sources */,
 				DCB87C94264B945D00CF250A /* GIListController.swift in Sources */,
 				DCEAF296264B70DB00AA7E88 /* UITextField+constructor.swift in Sources */,
+				DC8EE0F0265401F7002DFDAD /* UIColor+hex.swift in Sources */,
 				DCE03F63264B7BBC00161C8C /* GIGridSelfSizingCell.swift in Sources */,
 				DCEAF299264B70DB00AA7E88 /* UIViewController+navInTabBar.swift in Sources */,
 				DCEAF29D264B70DB00AA7E88 /* UIStackView+padding.swift in Sources */,
@@ -323,7 +328,7 @@
 				DCEAF297264B70DB00AA7E88 /* UIView+layout.swift in Sources */,
 				DCEAF2A2264B70DB00AA7E88 /* UIButton+convenience.swift in Sources */,
 				DCEAF29A264B70DB00AA7E88 /* CGRect+convenience.swift in Sources */,
-				DCEAF298264B70DB00AA7E88 /* GIStack.swift in Sources */,
+				DCEAF298264B70DB00AA7E88 /* Stack.swift in Sources */,
 				DCEAF293264B70DB00AA7E88 /* GIGridController.swift in Sources */,
 				DCEAF29F264B70DB00AA7E88 /* GIGridCell.swift in Sources */,
 				DCEAF29E264B70DB00AA7E88 /* CGSize+constructor.swift in Sources */,
@@ -390,6 +395,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_VERIFY_BITCODE = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -448,6 +454,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_VERIFY_BITCODE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -462,6 +469,7 @@
 		DCEAF27E264B702300AA7E88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -488,6 +496,7 @@
 		DCEAF27F264B702300AA7E88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

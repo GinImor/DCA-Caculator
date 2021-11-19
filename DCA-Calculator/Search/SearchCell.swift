@@ -33,10 +33,14 @@ class SearchCell: GIListCell<SearchResult> {
     super.setup()
     assetNameLabel.textAlignment = .right
     assetNameLabel.numberOfLines = 4
-    GIHStack(
-      GIVStack(assetSymbolLabel, assetTypeLabel.withCH(251, axis: .vertical)),
-      GIVStack(assetNameLabel.sizing(width: 160))
-    ).spacing().add(to: self).filling(self, edgeInsets: .init(8, 16))
+    hStack(
+      vStack(
+        assetSymbolLabel,
+        assetTypeLabel.withCH(251, axis: .vertical)
+      ),
+      vStack(assetNameLabel.sizing(width: 160))
+    )
+    .add(to: self).filling(self, edgeInsets: .init(8, 16))
   }
   
   override func didSetRow() {
